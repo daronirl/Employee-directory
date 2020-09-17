@@ -1,6 +1,9 @@
 
+
 body {
     position: relative;
+    font-family: 'Raleway', sans-serif;
+   
 }
 
 .overlay {
@@ -34,22 +37,60 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   
 }
 
-.card {
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 7px;
-    border: solid rgba(0, 0, 0, 0.185) 2px;
-    
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 70%;
+    margin-top: 13px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    border: 1px solid #000;   
+    border-radius: 3%;
+    margin: 10px;
+    width: 90%;
+   
+  }
+
+.text-container {
+    text-align: center;
+}
+
+
 
 .hidden {
     display: none;
 }
 
+
+@media (min-width: 768px) {
+    .body {
+        width: 45%;
+        min-width: 330px;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .card {
+        width: 30%;
+    }
+}
